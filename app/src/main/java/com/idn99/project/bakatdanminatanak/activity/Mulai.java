@@ -1,4 +1,4 @@
-package com.idn99.project.bakatdanminatanak;
+package com.idn99.project.bakatdanminatanak.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.idn99.project.bakatdanminatanak.R;
 
 public class Mulai extends AppCompatActivity {
 

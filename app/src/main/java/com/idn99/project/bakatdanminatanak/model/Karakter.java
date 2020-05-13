@@ -1,4 +1,4 @@
-package com.idn99.project.bakatdanminatanak;
+package com.idn99.project.bakatdanminatanak.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

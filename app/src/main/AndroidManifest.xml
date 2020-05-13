@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen"
+        <activity android:name=".activity.SplashScreen"
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,13 +17,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Mulai" />
-        <activity android:name=".About" />
-        <activity android:name=".HalamanAwal">
+        <activity android:name=".activity.Mulai" />
+        <activity android:name=".activity.About" />
+        <activity android:name=".activity.HalamanAwal">
 
         </activity>
-        <activity android:name=".Result" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.Result" />
+        <activity android:name=".activity.MainActivity" />
     </application>
 
 </manifest>

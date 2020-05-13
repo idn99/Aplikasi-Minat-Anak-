@@ -1,11 +1,14 @@
-package com.idn99.project.bakatdanminatanak;
+package com.idn99.project.bakatdanminatanak.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.widget.LinearLayout;
+
+import com.idn99.project.bakatdanminatanak.adapter.AboutListAdapter;
+import com.idn99.project.bakatdanminatanak.R;
+import com.idn99.project.bakatdanminatanak.model.Anggota;
 
 import java.util.ArrayList;
 

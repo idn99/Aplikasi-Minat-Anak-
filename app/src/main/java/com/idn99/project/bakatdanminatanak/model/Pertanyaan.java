@@ -1,4 +1,4 @@
-package com.idn99.project.bakatdanminatanak;
+package com.idn99.project.bakatdanminatanak.model;
 
 public class Pertanyaan {
     private int pilihan1;

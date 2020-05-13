@@ -1,14 +1,16 @@
-package com.idn99.project.bakatdanminatanak;
+package com.idn99.project.bakatdanminatanak.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.idn99.project.bakatdanminatanak.R;
+import com.idn99.project.bakatdanminatanak.model.Anggota;
 
 import java.util.ArrayList;
 

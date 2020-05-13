@@ -1,4 +1,4 @@
-package com.idn99.project.bakatdanminatanak;
+package com.idn99.project.bakatdanminatanak.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,8 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.idn99.project.bakatdanminatanak.R;
+import com.idn99.project.bakatdanminatanak.model.Karakter;
+import com.idn99.project.bakatdanminatanak.model.Pertanyaan;
 
 import java.util.ArrayList;
 

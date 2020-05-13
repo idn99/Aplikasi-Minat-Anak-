@@ -1,10 +1,12 @@
-package com.idn99.project.bakatdanminatanak;
+package com.idn99.project.bakatdanminatanak.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.idn99.project.bakatdanminatanak.R;
 
 public class SplashScreen extends AppCompatActivity {
 
