@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mulai"
+    android:orientation="vertical"
+    android:background="@drawable/home"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/home2"
+        android:padding="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukan Nama Anak : "
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/text"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/text"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukan Usia Anak : "
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/text"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/edt_usia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/text"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_marginBottom="20dp"
+            />
+        <Button
+            android:id="@+id/btn_lanjut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:background="@drawable/pilihan"/>
+    </LinearLayout>
+
+</LinearLayout>

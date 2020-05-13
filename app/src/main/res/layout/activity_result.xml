@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result">
+    
+    <RelativeLayout
+        android:id="@+id/layout_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@color/biru"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/result"
+            android:padding="30dp"
+            android:layout_marginTop="140dp"
+            >
+            <TextView
+                android:layout_marginTop="120dp"
+                android:id="@+id/tv_name_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Anak - Usia"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/gavabon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kepribadian : "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="@font/text"
+                />
+
+            <TextView
+                android:id="@+id/tv_kepribadian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keterangan"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/text"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ciri Sifat Anak : "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="@font/text"/>
+
+            <TextView
+                android:id="@+id/tv_sifat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keterangan"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minat dan Bakat : "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="@font/text"/>
+
+            <TextView
+                android:id="@+id/tv_bakat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keterangan"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keterangan : "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="@font/text"/>
+
+            <TextView
+                android:id="@+id/tv_ket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keterangan"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pola Belajar Disarankan : "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="@font/text"/>
+
+            <TextView
+                android:id="@+id/tv_cara_belajar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keterangan"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/text"/>
+
+            <Button
+                android:id="@+id/btn_back_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali ke Home"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:thicknessRatio="1.9">
+        <ImageView
+            android:id="@+id/image_kep"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/pleg"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

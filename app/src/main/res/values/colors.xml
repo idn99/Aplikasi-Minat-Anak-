@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="merah">#f58e8e</color>
+    <color name="biru">#8ea4f5</color>
+    <color name="kuning">#f5f38e</color>
+    <color name="hijau">#8ef59d</color>
+
+    <color name="blue">#3d677b</color>
+    <color name="silver_1">#a6a7a3</color>
+    <color name="silver_2">#d3c7b1</color>
+    <color name="gold">#c28f48</color>
+    <color name="brown">#9a4832</color>
+</resources>

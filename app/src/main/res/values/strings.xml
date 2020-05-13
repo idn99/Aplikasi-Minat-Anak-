@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Aplikasi Minat anak</string>
+
+    <string name="s1p1">Senang Memimpin dalam sebuah kelompok</string>
+    <string name="s1p2">Cenderung memiliki pemikiran yang jenius</string>
+    <string name="s1p3">Tak banyak bicara, namun mereka lebih bijaksana</string>
+    <string name="s1p4">Mudah dalam menjalin pertemanan</string>
+
+    <string name="s2p1">Cenderung mampu untuk membuat sebuah keputusan</string>
+    <string name="s2p2">Sangat mendalam dalam memutuskan berbagai hal</string>
+    <string name="s2p3">Lebih mencari solusi yang mudah dan tidak sulit dilakukan</string>
+    <string name="s2p4">Cenderung banyak bicara</string>
+
+    <string name="s3p1">Memiliki kemauan yang keras</string>
+    <string name="s3p2">Analitis</string>
+    <string name="s3p3">Berpegang pada suatu hal yang mereka yakini akan berhasil</string>
+    <string name="s3p4">Sifatnya yang ramah, bersahabat, dan hangat</string>
+
+    <string name="s4p1">Bebas dan mandiri</string>
+    <string name="s4p2">Serius dan juga tekun</string>
+    <string name="s4p3">Pendengar yang baik</string>
+    <string name="s4p4">Antusias yang cukup tinggi dalam beraktivitas</string>
+
+    <string name="s5p1">Selalu berani dalam menghadapi sebuah masalah dan tantangan</string>
+    <string name="s5p2">Mendalam dan penuh pikiran</string>
+    <string name="s5p3">Senang melakukan hal yang sama berulang-ulang setiap waktunya tanpa merasa bosan</string>
+    <string name="s5p4">Berusaha untuk menyenangkan orang lain</string>
+
+    <string name="s6p1">Selalu terdorong oleh tantangan</string>
+    <string name="s6p2">Punya standar yang tinggi dan juga perlu menyelesaikan apa yang sudah mereka mulai</string>
+    <string name="s6p3">Memiliki sifat peduli dan simpatik yang tinggi</string>
+    <string name="s6p4">Memiliki belas kasihan tinggi</string>
+
+    <string name="s7p1">Senang sekali memerintah</string>
+    <string name="s7p2">Cenderung mudah tertekan</string>
+    <string name="s7p3">Kurang begitu tegas</string>
+    <string name="s7p4">Emosinya yang cenderung labil</string>
+
+    <string name="s8p1">Tidak dapat bersantai dan terlalu bergairah</string>
+    <string name="s8p2">Tidak bisa bergerak cepat dan dinamis</string>
+    <string name="s8p3">Sifatnya Pemalu</string>
+    <string name="s8p4">Tidak terlalu produktif</string>
+
+    <string name="s9p1">Tidak menyukai hal – hal yang berkaitan dengan simpatik dan air mata</string>
+    <string name="s9p2">Sulit menghibur dan menyenangkan</string>
+    <string name="s9p3">Humoris</string>
+    <string name="s9p4">Menyenangkan ketika sedang berkumpul</string>
+
+    <string name="s10p1">Tidak menyukai hal yang sepele atau bertele – tele</string>
+    <string name="s10p2">Menyusun segala sesuatu dengan rapih</string>
+    <string name="s10p3">Tidak menyukai perubahan atau kegiatan baru</string>
+    <string name="s10p4">Sering lupa waktu</string>
+
+    <string name="s11p1">Sulit untuk mengaku salah dan memohon maaf</string>
+    <string name="s11p2">Tidak mau disalahkan</string>
+    <string name="s11p3">Sering menunda dan menggantungkan masalah</string>
+    <string name="s11p4">Tidak memiliki rasa dendam</string>
+
+    <string name="s12p1">Menghalalkan segala cara untuk mencapai tujuannya</string>
+    <string name="s12p2">Cenderung memiliki ide sebelum bertindak</string>
+    <string name="s12p3">Selalu merasa takut dan khawatir</string>
+    <string name="s12p4">Energi dan antusiame yang tinggi</string>
+
+    <string name="kep1">Koleris</string>
+    <string name="kep2">Melankonis</string>
+    <string name="kep3">Plegmatis</string>
+    <string name="kep4">Sanguinis</string>
+
+    <string name="c1">Berdiri Sendiri, Produktif, Tegas, Menang Sendiri</string>
+    <string name="c2">Perfeksionis, Setia , Idealis, Pemurung</string>
+    <string name="c3">Tenang, Mudah bergaul, Pengamat</string>
+    <string name="c4">Periang, Beremangat, Kurang disiplin</string>
+
+    <string name="minat1">Bakat yang cocok untuk kepribadian koleris adalah menjadi Pengacara, Manager, atau Insinyur</string>
+    <string name="minat2">Bakat yang cocok untuk kepribadian melankolis adalah menjadi seniman, penulis serta Analis</string>
+    <string name="minat3">Bakat yang cocok untuk kepribadian plegmatis adalah menjadi Psikolog , Guru , Perawat</string>
+    <string name="minat4">Bakat yang cocok untuk kepribadian sanguinis adalah menjadi Public Relation, Atlit, Entertainer</string>
+
+    <string name="ket1">
+        Koleris yang kuat merupakan tipe kepribadian yang tegas dan tipe seorang pemimpin. Koleris sangat suka mengatur, suka petualangan, suka tantangan baru, memiliki ketegasan dalam menentukan keputusan, tidak mudah menyerah, tidak mudah mengalah. Tipe koleris menjadi sosok yang selalu diidam- idamkan oleh orang lain karena terlihat sangat keren dan kuat dari luar. Namun dibalik semua kesempurnaan dirinya dan jiwa kepemimpinannya yang besar, orang koleris cenderung jarang bersenang- senang
+    </string>
+    <string name="ket2">
+        Tipe Kepribadian Melankolis yang sempurna merupakan tipe kepribadian yang memiliki karakter cenderung bersikap rapi, teratur, terencana, dan mampu mempertimbangkan segala sesuatu dengan melihat hal- hal kecil. Secara penampilan fisik, orang dengan tipe melankolis sempurna tampak rapi, baju mulus, sepatu bersih, barang bawaan tertata rapi, buku tertata dengan rapi, tulisan rapi
+    </string>
+    <string name="ket3">
+        Seseorang dengan tipe karakter phlegmatis menunjukkan pribadi yang mudah diatur, cenderung diam dan kalem, suka mengalah, memiliki rasa toleransi yang tinggi, mudah untuk disuruh dan selalu mau melakukan, suka mengalah, tidak menyukai konflik. Orang dengan tipe ini suka dengan kehidupan yang damai- damai saja dan tenang. Apabila dihadapkan pada suatu masalah, maka dia akan mencari solusi dengan cara damai dan diselesaikan dengan tenang. Tipe plegmatis mampu bersabar dalam kondisi apapun. Apabila disuruh untuk mengambil keputusan, mengalami kesulitas dan cenderung menunda- nunda
+    </string>
+    <string name="ket4">
+        Sanguinis merupakan tipe karakter kepribadian yang suka menjadi bahan perhatian, ingin selalu disenangi oleh orang lain, menyukai kepopuleran, memiliki rasa percaya diri yang tinggi dan senang menjadi pusat perhatian. Seorang sanguinis selalu senang dalam situasi yang gembira, pesta- pesta, berkumpul dengan teman- teman dalam kondisi yang ramai. Senang terhadap aktivitas kebersamaan yang menyenangkan, namun hidupnya tidak teratur. Orang dengan tipe sanguinis susah berkonsentrasi dan diajak serius. Selalu cenderung memberikan keputusan setelah berpikir pendek
+    </string>
+
+    <string name="cb1">Belajar dengan metode pemecahan masalah, debat serta presentasi</string>
+    <string name="cb2">Belajar secara terjadwal, diskusi atau membuat prakarya</string>
+    <string name="cb3">Belajar berkelompok serta diskusi</string>
+    <string name="cb4">Belajar dengan berdiskusi untuk menyelesaikan masalah, presentasi serta permainan</string>
+</resources>
