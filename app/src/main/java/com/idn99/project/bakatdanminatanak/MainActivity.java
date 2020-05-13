@@ -3,6 +3,7 @@ package com.idn99.project.bakatdanminatanak;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -120,9 +121,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void analisaBakat(){
-        if (k1>k2 && k1>k3 && k1>k4){
+        if (k1>=k2 && k1>=k3 && k1>=k4){
             karakter = new Karakter(
-                    R.color.merah,
+                    Color.parseColor("#f58e8e"),
                     R.drawable.chol,
                     nama,
                     umur,
@@ -132,9 +133,9 @@ public class MainActivity extends AppCompatActivity {
                     R.string.ket1,
                     R.string.cb1
             );
-        }else if (k2>k1 && k2>k3 && k2>k4){
+        }else if (k2>=k1 && k2>=k3 && k2>=k4){
             karakter = new Karakter(
-                    R.color.biru,
+                    Color.parseColor("#8ea4f5"),
                     R.drawable.mel,
                     nama,
                     umur,
@@ -144,9 +145,9 @@ public class MainActivity extends AppCompatActivity {
                     R.string.ket2,
                     R.string.cb2
             );
-        }else if (k3>k1 && k3>k1 && k3>k4){
+        }else if (k3>=k1 && k3>=k1 && k3>=k4){
             karakter = new Karakter(
-                    R.color.hijau,
+                    Color.parseColor("#f5f38e"),
                     R.drawable.pleg,
                     nama,
                     umur,
@@ -156,9 +157,9 @@ public class MainActivity extends AppCompatActivity {
                     R.string.ket3,
                     R.string.cb3
             );
-        }else if(k4>k1 && k4>k2 && k4>k3){
+        }else if(k4>=k1 && k4>=k2 && k4>=k3){
             karakter = new Karakter(
-                    R.color.kuning,
+                    Color.parseColor("#8ef59d"),
                     R.drawable.sang,
                     nama,
                     umur,

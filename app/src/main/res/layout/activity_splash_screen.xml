@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="50dp">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ss"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tes Bakat dan Minat Anak"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/gavabon"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

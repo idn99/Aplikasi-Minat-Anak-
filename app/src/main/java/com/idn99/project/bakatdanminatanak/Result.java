@@ -31,10 +31,9 @@ public class Result extends AppCompatActivity {
 
         inisial();
 
-        Bundle bundle = getIntent().getExtras();
-        Karakter karakter = bundle.getParcelable("result");
+        Karakter karakter = getIntent().getParcelableExtra("result");
 
-        layout.setBackground(getDrawable(karakter.getWarnaKarater()));
+        layout.setBackgroundColor(karakter.getWarnaKarater());
         imgKar.setImageResource(karakter.getGambararakter());
         tvNamaUmur.setText(karakter.getNama()+" - "+karakter.getUmur()+" Tahun");
         tvKep.setText(karakter.getKepribadian());
