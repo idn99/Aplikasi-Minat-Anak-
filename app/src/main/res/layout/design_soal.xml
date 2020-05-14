@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:background="@drawable/button">
+
+    <TextView
+        android:id="@+id/tv_soal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pertanyaan"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/text"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/rd_group_soal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="82dp"
+        >
+        <RadioButton
+            android:id="@+id/rd_yes"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Ya"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/text"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/rd_no"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Tidak"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/text"
+            android:textStyle="bold"/>
+    </RadioGroup>
+
+</LinearLayout>

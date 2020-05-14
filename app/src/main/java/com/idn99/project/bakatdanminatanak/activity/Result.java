@@ -3,7 +3,10 @@ package com.idn99.project.bakatdanminatanak.activity;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +23,7 @@ public class Result extends AppCompatActivity {
     private RelativeLayout layout;
     private ImageView imgKar;
     private TextView tvNamaUmur, tvKep, tvSifat, tvBakat, tvKet, tvCaraBel;
-    private Button btnBackHome;
+    private Button btnBackHome, btnExit;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,28 @@ public class Result extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(Result.this, R.style.DialogeTheme);
+
+                builder.setTitle("Keluar");
+                builder.setMessage("Apakah Anda Ingin Keluar Aplikasi?");
+
+                builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
+
+                builder.setNegativeButton("NO", null);
+
+                AlertDialog alert = builder.create();
+                alert.show();
+            }
+        });
     }
 
     private void inisial(){
@@ -59,6 +84,7 @@ public class Result extends AppCompatActivity {
         tvKet = findViewById(R.id.tv_ket);
         tvCaraBel = findViewById(R.id.tv_cara_belajar);
         btnBackHome = findViewById(R.id.btn_back_home);
+        btnExit = findViewById(R.id.btn_exit);
     }
 
 
