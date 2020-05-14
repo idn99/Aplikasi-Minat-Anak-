@@ -1,11 +1,7 @@
 package com.idn99.project.bakatdanminatanak.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -16,8 +12,6 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.idn99.project.bakatdanminatanak.R;
-import com.idn99.project.bakatdanminatanak.adapter.SoalAdapter;
-import com.idn99.project.bakatdanminatanak.model.Jawaban;
 import com.idn99.project.bakatdanminatanak.model.Karakter;
 import com.idn99.project.bakatdanminatanak.model.Pertanyaan;
 
@@ -27,13 +21,13 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<Pertanyaan> pertanyaan = new ArrayList<>();
     private Button btnNxt;
-    private RecyclerView rvSoal;
+    private RadioGroup radioGroup;
+    private RadioButton rbPilihan1 , rbPilihan2, rbPilihan3, rbPilihan4;
     private Karakter karakter;
-    private SoalAdapter adapter;
     private int n;
+    private double k1,k2,k3,k4;
+    private Boolean isEmpty = true;
     private String nama, umur;
-    private int kar1,kar2,kar3,kar4,bakat1,bakat2,bakat3,bakat4,bakat5;
-    private ArrayList<Jawaban> jawaban = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +35,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnNxt = findViewById(R.id.btn_next);
-        rvSoal = findViewById(R.id.rv_soal);
+        radioGroup = findViewById(R.id.rd_group);
+        rbPilihan1 = findViewById(R.id.rb_p1);
+        rbPilihan2 = findViewById(R.id.rb_p2);
+        rbPilihan3 = findViewById(R.id.rb_p3);
+        rbPilihan4 = findViewById(R.id.rb_p4);
 
         Bundle bundle = getIntent().getExtras();
         nama = bundle.getString("nama");
@@ -52,109 +50,81 @@ public class MainActivity extends AppCompatActivity {
         btnNxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                if (!adapter.getIsEmpty()){
+                isiJawaban();
+                if (!isEmpty){
                     setContent();
-//                }else {
-//                    Toast.makeText(MainActivity.this, "Jawaban Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
-//                }
+                }else {
+                    Toast.makeText(MainActivity.this, "Pilihlah Salah Satu", Toast.LENGTH_SHORT).show();
+                }
             }
         });
-
-    }
-
-    @Override
-    public void onBackPressed() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.DialogeTheme);
-
-        builder.setTitle("Peringatan");
-        builder.setMessage("Kembali Ke Halaman Utama?");
-
-        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-
-            public void onClick(DialogInterface dialog, int which) {
-                finish();
-            }
-        });
-
-        builder.setNegativeButton("NO", null);
-
-        AlertDialog alert = builder.create();
-        alert.show();
     }
 
     private void isiSoal(){
-        pertanyaan.add(new Pertanyaan(1, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(2, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(3, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(4, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(5, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(6, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(7, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(8, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(9, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(10, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(1, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(2, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(3, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(4, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(5, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(6, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(7, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(8, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(9, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(10, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(9, "Anak Berdiri Sediri"));
-        pertanyaan.add(new Pertanyaan(10, "Anak Berdiri Sediri"));
+        Pertanyaan p1 = new Pertanyaan(R.string.s1p1, R.string.s1p2,R.string.s1p3,R.string.s1p4);
+        pertanyaan.add(p1);
+        Pertanyaan p2 = new Pertanyaan(R.string.s2p1, R.string.s2p2,R.string.s2p3,R.string.s2p4);
+        pertanyaan.add(p2);
+        Pertanyaan p3 = new Pertanyaan(R.string.s3p1, R.string.s3p2,R.string.s3p3,R.string.s3p4);
+        pertanyaan.add(p3);
+        Pertanyaan p4 = new Pertanyaan(R.string.s4p1, R.string.s4p2,R.string.s4p3,R.string.s4p4);
+        pertanyaan.add(p4);
+        Pertanyaan p5 = new Pertanyaan(R.string.s5p1, R.string.s5p2,R.string.s5p3,R.string.s5p4);
+        pertanyaan.add(p5);
+        Pertanyaan p6 = new Pertanyaan(R.string.s6p1, R.string.s6p2,R.string.s6p3,R.string.s6p4);
+        pertanyaan.add(p6);
+        Pertanyaan p7 = new Pertanyaan(R.string.s7p1, R.string.s7p2,R.string.s7p3,R.string.s7p4);
+        pertanyaan.add(p7);
+        Pertanyaan p8 = new Pertanyaan(R.string.s8p1, R.string.s8p2,R.string.s8p3,R.string.s8p4);
+        pertanyaan.add(p8);
+        Pertanyaan p9 = new Pertanyaan(R.string.s9p1, R.string.s9p2,R.string.s9p3,R.string.s9p4);
+        pertanyaan.add(p9);
+        Pertanyaan p10 = new Pertanyaan(R.string.s10p1, R.string.s10p2,R.string.s10p3,R.string.s10p4);
+        pertanyaan.add(p10);
+        Pertanyaan p11 = new Pertanyaan(R.string.s11p1, R.string.s11p2,R.string.s11p3,R.string.s11p4);
+        pertanyaan.add(p11);
+        Pertanyaan p12 = new Pertanyaan(R.string.s12p1, R.string.s12p2,R.string.s12p3,R.string.s12p4);
+        pertanyaan.add(p12);
+    }
+
+    private void isiJawaban(){
+        if (radioGroup.getCheckedRadioButtonId()==R.id.rb_p1){
+            k1 = k1 + 1;
+            isEmpty = false;
+        }else if(radioGroup.getCheckedRadioButtonId()==R.id.rb_p2){
+            k2 = k2 + 1;
+            isEmpty = false;
+        }else if(radioGroup.getCheckedRadioButtonId()==R.id.rb_p3) {
+            k3 = k3 + 1;
+            isEmpty = false;
+        }else if(radioGroup.getCheckedRadioButtonId()==R.id.rb_p4) {
+            k4 = k4 + 1;
+            isEmpty = false;
+        }else{
+            isEmpty = true;
+        }
     }
 
     private void setContent(){
         pertanyaan.size();
-        if (n>2){
+        if (n>=pertanyaan.size()){
             analisaBakat();
-            Toast.makeText(this, jawaban.toString(), Toast.LENGTH_SHORT).show();
-//            Intent intent = new Intent(this, Result.class);
-//            intent.putExtra("result",karakter);
-//            finish();
-//            startActivity(intent);
+            Intent intent = new Intent(this, Result.class);
+            intent.putExtra("result",karakter);
+            finish();
+            startActivity(intent);
         }else{
-            ArrayList<Pertanyaan> prt = new ArrayList<>();
-            if (n==0){
-                for (int i=0;i<10;i++){
-                    prt.add(pertanyaan.get(i));
-                }
-            }else if(n==1){
-                for (int i=10;i<20;i++){
-                    prt.add(pertanyaan.get(i));
-                }
-            }else if (n==2){
-                for (int i=20;i<pertanyaan.size();i++){
-                    prt.add(pertanyaan.get(i));
-                }
-            }
-            adapter = new SoalAdapter(prt, getApplicationContext());
-            rvSoal.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-            rvSoal.setAdapter(adapter);
-
-            jawaban.add(adapter.getJawaban());
+            rbPilihan1.setText(pertanyaan.get(n).getPilihan1());
+            rbPilihan2.setText(pertanyaan.get(n).getPilihan2());
+            rbPilihan3.setText(pertanyaan.get(n).getPilihan3());
+            rbPilihan4.setText(pertanyaan.get(n).getPilihan4());
+            radioGroup.clearCheck();
         }
         n++;
     }
 
-
     private void analisaBakat(){
-        for (int i=0;i<jawaban.size();i++){
-            if (i<6){
-                kar1 = kar1 + jawaban.get(i).getJawaban();
-            }else if (i>6 && i<13){
-                kar2 = kar2 + jawaban.get(i).getJawaban();
-            }else if (i>13 && i<18){
-                kar3 = kar3 + jawaban.get(i).getJawaban();
-            }else if (i>18 && i<22){
-                kar3 = kar3 + jawaban.get(i).getJawaban();
-            }
-        }
-
-        if (kar1>=kar2 && kar1>=kar3 && kar1>=kar4){
+        if (k1>=k2 && k1>=k3 && k1>=k4){
             karakter = new Karakter(
                     Color.parseColor("#f58e8e"),
                     R.drawable.chol,
@@ -166,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
                     R.string.ket1,
                     R.string.cb1
             );
-        }else if (kar2>=kar1 && kar2>=kar3 && kar2>=kar4){
+        }else if (k2>=k1 && k2>=k3 && k2>=k4){
             karakter = new Karakter(
                     Color.parseColor("#8ea4f5"),
                     R.drawable.mel,
@@ -178,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
                     R.string.ket2,
                     R.string.cb2
             );
-        }else if (kar3>=kar1 && kar3>=kar2 && kar3>=kar4){
+        }else if (k3>=k1 && k3>=k1 && k3>=k4){
             karakter = new Karakter(
                     Color.parseColor("#f5f38e"),
                     R.drawable.pleg,
@@ -190,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                     R.string.ket3,
                     R.string.cb3
             );
-        }else if(kar4>=kar1 && kar4>=kar2 && kar4>=kar3){
+        }else if(k4>=k1 && k4>=k2 && k4>=k3){
             karakter = new Karakter(
                     Color.parseColor("#8ef59d"),
                     R.drawable.sang,

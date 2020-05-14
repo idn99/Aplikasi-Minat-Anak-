@@ -15,9 +15,4 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="DialogeTheme" parent="Theme.AppCompat.Dialog.Alert">
-        <item name="android:background">@color/blue</item>
-        <item name="colorAccent">@android:color/white</item>
-    </style>
-
 </resources>
