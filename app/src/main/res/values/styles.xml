@@ -15,4 +15,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="SoalTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/biru_laut</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HomeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/biru_gelap</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
 </resources>

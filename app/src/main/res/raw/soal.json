@@ -1,0 +1,176 @@
+{
+  "soal": [
+    {
+      "noSoal": 1,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Bisa Berdiri Sendiri ?"
+    },
+    {
+      "noSoal": 2,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda tegas ?"
+    },
+    {
+      "noSoal": 3,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Produktif ? "
+    },
+    {
+      "noSoal": 4,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Tidak Mudah Bersimpati ?"
+    },
+    {
+      "noSoal": 5,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Suka Menguasai ?"
+    },
+    {
+      "noSoal": 6,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Suka Menang Sendiri ? "
+    },
+    {
+      "noSoal": 7,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Suka Menganalisa ? "
+    },
+    {
+      "noSoal": 8,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Perfeksionis ?"
+    },
+    {
+      "noSoal": 9,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Setia ?"
+    },
+    {
+      "noSoal": 10,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Idealis ?"
+    },
+    {
+      "noSoal": 11,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Pemurung ? "
+    },
+    {
+      "noSoal": 12,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Sering Berfikiran Negatif ? "
+    },
+    {
+      "noSoal": 13,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Pengkritik ? "
+    },
+    {
+      "noSoal": 14,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Tenang dan Pendiam ?"
+    },
+    {
+      "noSoal": 15,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Mudah Bergaul ? "
+    },
+    {
+      "noSoal": 16,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Susah Punyai Motivasi ? "
+    },
+    {
+      "noSoal": 17,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Menghindari Konflik ?"
+    },
+    {
+      "noSoal": 18,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Pengamat ? "
+    },
+    {
+      "noSoal": 19,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "pakah Anak Anda Periang ? "
+    },
+    {
+      "noSoal": 20,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Bersifat Positif ? "
+    },
+    {
+      "noSoal": 21,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Bersemangat ?"
+    },
+    {
+      "noSoal": 22,
+      "kategoriSoal": "Tes Karakter",
+      "soal": "Apakah Anak Anda Kurang Disiplin ?"
+    }
+  ],
+  "karakter": [
+    {
+      "noKarakter": 1,
+      "warnaKarakter": "#f58e8e",
+      "namaKarakter": "Koleris",
+      "caraBelajar": "Belajar dengan metode pemecahan masalah, debat serta presentasi",
+      "sifatKarakter": "Koleris yang kuat merupakan tipe kepribadian yang tegas dan tipe seorang pemimpin. Koleris sangat suka mengatur, suka petualangan, suka tantangan baru, memiliki ketegasan dalam menentukan keputusan, tidak mudah menyerah, tidak mudah mengalah. Tipe koleris menjadi sosok yang selalu diidam- idamkan oleh orang lain karena terlihat sangat keren dan kuat dari luar. Namun dibalik semua kesempurnaan dirinya dan jiwa kepemimpinannya yang besar, orang koleris cenderung jarang bersenang- senang"
+    },
+    {
+      "noKarakter": 2,
+      "warnaKarakter": "#8ea4f5",
+      "namaKarakter": "Melankonis",
+      "caraBelajar": "Belajar secara terjadwal, diskusi atau membuat prakarya",
+      "sifatKarakter": "Tipe Kepribadian Melankolis yang sempurna merupakan tipe kepribadian yang memiliki karakter cenderung bersikap rapi, teratur, terencana, dan mampu mempertimbangkan segala sesuatu dengan melihat hal- hal kecil. Secara penampilan fisik, orang dengan tipe melankolis sempurna tampak rapi, baju mulus, sepatu bersih, barang bawaan tertata rapi, buku tertata dengan rapi, tulisan rapi"
+    },
+    {
+      "noKarakter": 3,
+      "warnaKarakter": "#f5f38e",
+      "namaKarakter": "Phlegmatis",
+      "caraBelajar": "Belajar berkelompok serta diskusi",
+      "sifatKarakter": "Seseorang dengan tipe karakter phlegmatis menunjukkan pribadi yang mudah diatur, cenderung diam dan kalem, suka mengalah, memiliki rasa toleransi yang tinggi, mudah untuk disuruh dan selalu mau melakukan, suka mengalah, tidak menyukai konflik. Orang dengan tipe ini suka dengan kehidupan yang damai- damai saja dan tenang. Apabila dihadapkan pada suatu masalah, maka dia akan mencari solusi dengan cara damai dan diselesaikan dengan tenang. Tipe plegmatis mampu bersabar dalam kondisi apapun. Apabila disuruh untuk mengambil keputusan, mengalami kesulitas dan cenderung menunda- nunda"
+    },
+    {
+      "noKarakter": 4,
+      "warnaKarakter": "#8ef59d",
+      "namaKarakter": "Sanguinis",
+      "caraBelajar": "Belajar dengan berdiskusi untuk menyelesaikan masalah, presentasi serta permainan",
+      "sifatKarakter": "Sanguinis merupakan tipe karakter kepribadian yang suka menjadi bahan perhatian, ingin selalu disenangi oleh orang lain, menyukai kepopuleran, memiliki rasa percaya diri yang tinggi dan senang menjadi pusat perhatian. Seorang sanguinis selalu senang dalam situasi yang gembira, pesta- pesta, berkumpul dengan teman- teman dalam kondisi yang ramai. Senang terhadap aktivitas kebersamaan yang menyenangkan, namun hidupnya tidak teratur. Orang dengan tipe sanguinis susah berkonsentrasi dan diajak serius. Selalu cenderung memberikan keputusan setelah berpikir pendek"
+    }
+  ],
+  "kriteria": [
+    {
+      "noKriteria": 1,
+      "bakatAnak": "Intelektual Umum",
+      "keteranganBakat": "Anak cenderung menyukai hal-hal yang bersifat pengetahuan. Orang tua dapat memberikan pendidikan tentang pengetahuan umum. Orang tua dapat memberikan ensiklopedia agar pengetahuan anak semakin berkembang"
+    },
+    {
+      "noKriteria": 2,
+      "bakatAnak": "Akademik Khusus",
+      "keteranganBakat": "Anak cenderung menyukai hal-hal yang bersifat logis. Orang tua dapat memberikan pendidikan tentang perhitungan, fisika, dan kimia."
+    },
+    {
+      "noKriteria": 3,
+      "bakatAnak": "Berpikir Kreatif dan Produktif",
+      "keteranganBakat": "Anak cenderung menyukai hal-hal yang bersifat senang dalam membuat suatu barang. Orang tua dapat memberikan pendidikan tentang hal-hal baru dan menciptakan sesuatu yang sederhana."
+    },
+    {
+      "noKriteria": 4,
+      "bakatAnak": "Kepemimpinan",
+      "keteranganBakat": "Anak cenderung menyukai hal-hal yang bersifat kebersamaan. Orang tua dapat memberikan pendidikan tentang bagaimana mengatur hal-hal kecil sampai organisasi/kelompok sederhana"
+    },
+    {
+      "noKriteria": 5,
+      "bakatAnak": "Seni Visual dan Pertunjukan",
+      "keteranganBakat": "Anak cenderung menyukai hal-hal yang bersifat seni. Orang tua dapat memberikan pendidikan tentang kesenian daerah maupun kesenian luar"
+    },
+    {
+      "noKriteria": 6,
+      "bakatAnak": "Psikomotorik",
+      "keteranganBakat": "Anak cenderung menyukai hal-hal yang bersifat aktif. Orang tua dapat memberikan pendidikan tentang berolahraga dengan baik dan cabang olah raga yang digemari"
+    }
+  ]
+}

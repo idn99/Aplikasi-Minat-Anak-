@@ -36,5 +36,6 @@ public class HalamanAwal extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

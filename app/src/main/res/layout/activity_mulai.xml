@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.Mulai"
     android:orientation="vertical"
-    android:background="@drawable/home"
+    android:background="@drawable/bg_home"
     >
 
     <LinearLayout
@@ -65,7 +65,7 @@
             android:text="next"
             android:layout_gravity="end"
             android:textColor="@color/white"
-            android:background="@drawable/pilihan"/>
+            android:background="@drawable/blue_dark_circle"/>
     </LinearLayout>
 
 </LinearLayout>

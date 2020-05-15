@@ -2,32 +2,45 @@ package com.idn99.project.bakatdanminatanak.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.idn99.project.bakatdanminatanak.R;
+import com.idn99.project.bakatdanminatanak.model.Anak;
 import com.idn99.project.bakatdanminatanak.model.Karakter;
 import com.idn99.project.bakatdanminatanak.model.Pertanyaan;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     private ArrayList<Pertanyaan> pertanyaan = new ArrayList<>();
-    private Button btnNxt;
+    private ArrayList<Karakter> daftarKarakters = new ArrayList<>();
+    private Karakter resultKarakters;
+    private Anak anak;
+    private ArrayList<Integer> jawaban = new ArrayList<>();
+    Button btnNxt;
+    private TextView tvSoal, tvNoSoal, tvKategoriSoal;
     private RadioGroup radioGroup;
-    private RadioButton rbPilihan1 , rbPilihan2, rbPilihan3, rbPilihan4;
-    private Karakter karakter;
     private int n;
     private double k1,k2,k3,k4;
     private Boolean isEmpty = true;
     private String nama, umur;
+    InputStream inputFileSoal, inputFileHistory;
+    private String fileJsonSoal, fileJsonHistory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,16 +49,19 @@ public class MainActivity extends AppCompatActivity {
 
         btnNxt = findViewById(R.id.btn_next);
         radioGroup = findViewById(R.id.rd_group);
-        rbPilihan1 = findViewById(R.id.rb_p1);
-        rbPilihan2 = findViewById(R.id.rb_p2);
-        rbPilihan3 = findViewById(R.id.rb_p3);
-        rbPilihan4 = findViewById(R.id.rb_p4);
+        tvKategoriSoal = findViewById(R.id.jenis_tes);
+        tvNoSoal = findViewById(R.id.tv_soal_ke);
+        tvSoal = findViewById(R.id.tv_soal);
 
         Bundle bundle = getIntent().getExtras();
         nama = bundle.getString("nama");
         umur = bundle.getString("usia");
 
-        isiSoal();
+        inputFileSoal= getResources().openRawResource(R.raw.soal);
+        fileJsonSoal = loadJSONFromRaw(inputFileSoal);
+//        fileJsonKar = loadJSONFromRaw(inputFileSoal);
+        getJsonSoal(fileJsonSoal);
+//        getJsonKriteria(fileJsonKar);
         setContent();
         btnNxt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,47 +76,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void isiSoal(){
-        Pertanyaan p1 = new Pertanyaan(R.string.s1p1, R.string.s1p2,R.string.s1p3,R.string.s1p4);
-        pertanyaan.add(p1);
-        Pertanyaan p2 = new Pertanyaan(R.string.s2p1, R.string.s2p2,R.string.s2p3,R.string.s2p4);
-        pertanyaan.add(p2);
-        Pertanyaan p3 = new Pertanyaan(R.string.s3p1, R.string.s3p2,R.string.s3p3,R.string.s3p4);
-        pertanyaan.add(p3);
-        Pertanyaan p4 = new Pertanyaan(R.string.s4p1, R.string.s4p2,R.string.s4p3,R.string.s4p4);
-        pertanyaan.add(p4);
-        Pertanyaan p5 = new Pertanyaan(R.string.s5p1, R.string.s5p2,R.string.s5p3,R.string.s5p4);
-        pertanyaan.add(p5);
-        Pertanyaan p6 = new Pertanyaan(R.string.s6p1, R.string.s6p2,R.string.s6p3,R.string.s6p4);
-        pertanyaan.add(p6);
-        Pertanyaan p7 = new Pertanyaan(R.string.s7p1, R.string.s7p2,R.string.s7p3,R.string.s7p4);
-        pertanyaan.add(p7);
-        Pertanyaan p8 = new Pertanyaan(R.string.s8p1, R.string.s8p2,R.string.s8p3,R.string.s8p4);
-        pertanyaan.add(p8);
-        Pertanyaan p9 = new Pertanyaan(R.string.s9p1, R.string.s9p2,R.string.s9p3,R.string.s9p4);
-        pertanyaan.add(p9);
-        Pertanyaan p10 = new Pertanyaan(R.string.s10p1, R.string.s10p2,R.string.s10p3,R.string.s10p4);
-        pertanyaan.add(p10);
-        Pertanyaan p11 = new Pertanyaan(R.string.s11p1, R.string.s11p2,R.string.s11p3,R.string.s11p4);
-        pertanyaan.add(p11);
-        Pertanyaan p12 = new Pertanyaan(R.string.s12p1, R.string.s12p2,R.string.s12p3,R.string.s12p4);
-        pertanyaan.add(p12);
-    }
-
     private void isiJawaban(){
-        if (radioGroup.getCheckedRadioButtonId()==R.id.rb_p1){
-            k1 = k1 + 1;
+        if (radioGroup.getCheckedRadioButtonId()==R.id.rd_yes){
+            jawaban.add(1);
             isEmpty = false;
-        }else if(radioGroup.getCheckedRadioButtonId()==R.id.rb_p2){
-            k2 = k2 + 1;
+        }else if (radioGroup.getCheckedRadioButtonId()==R.id.rd_no){
+            jawaban.add(0);
             isEmpty = false;
-        }else if(radioGroup.getCheckedRadioButtonId()==R.id.rb_p3) {
-            k3 = k3 + 1;
-            isEmpty = false;
-        }else if(radioGroup.getCheckedRadioButtonId()==R.id.rb_p4) {
-            k4 = k4 + 1;
-            isEmpty = false;
-        }else{
+        }else {
             isEmpty = true;
         }
     }
@@ -108,70 +91,97 @@ public class MainActivity extends AppCompatActivity {
     private void setContent(){
         pertanyaan.size();
         if (n>=pertanyaan.size()){
-            analisaBakat();
+            analisaKarakter();
+            anak = new Anak(
+                    nama,
+                    Integer.parseInt(umur),
+                    resultKarakters.getWarnaKarakter(),
+                    resultKarakters.getNamKarakter(),
+                    "Bakat",
+                    resultKarakters.getSifatKarakter(),
+                    "Ket. bakat",
+                    resultKarakters.getCaraBelajar()
+            );
             Intent intent = new Intent(this, Result.class);
-            intent.putExtra("result",karakter);
+            intent.putExtra("result",anak);
             finish();
             startActivity(intent);
         }else{
-            rbPilihan1.setText(pertanyaan.get(n).getPilihan1());
-            rbPilihan2.setText(pertanyaan.get(n).getPilihan2());
-            rbPilihan3.setText(pertanyaan.get(n).getPilihan3());
-            rbPilihan4.setText(pertanyaan.get(n).getPilihan4());
-            radioGroup.clearCheck();
+            tvKategoriSoal.setText(pertanyaan.get(n).getKategoriSoal());
+            tvNoSoal.setText("Soal Ke "+pertanyaan.get(n).getNoSoal()+" dari "+pertanyaan.size()+" soal");
+            tvSoal.setText(pertanyaan.get(n).getSoal());
+//            radioGroup.clearCheck();
         }
         n++;
     }
 
-    private void analisaBakat(){
-        if (k1>=k2 && k1>=k3 && k1>=k4){
-            karakter = new Karakter(
-                    Color.parseColor("#f58e8e"),
-                    R.drawable.chol,
-                    nama,
-                    umur,
-                    R.string.kep1,
-                    R.string.c1,
-                    R.string.minat1,
-                    R.string.ket1,
-                    R.string.cb1
-            );
-        }else if (k2>=k1 && k2>=k3 && k2>=k4){
-            karakter = new Karakter(
-                    Color.parseColor("#8ea4f5"),
-                    R.drawable.mel,
-                    nama,
-                    umur,
-                    R.string.kep2,
-                    R.string.c2,
-                    R.string.minat2,
-                    R.string.ket2,
-                    R.string.cb2
-            );
-        }else if (k3>=k1 && k3>=k1 && k3>=k4){
-            karakter = new Karakter(
-                    Color.parseColor("#f5f38e"),
-                    R.drawable.pleg,
-                    nama,
-                    umur,
-                    R.string.kep3,
-                    R.string.c3,
-                    R.string.minat3,
-                    R.string.ket3,
-                    R.string.cb3
-            );
-        }else if(k4>=k1 && k4>=k2 && k4>=k3){
-            karakter = new Karakter(
-                    Color.parseColor("#8ef59d"),
-                    R.drawable.sang,
-                    nama,
-                    umur,
-                    R.string.kep4,
-                    R.string.c4,
-                    R.string.minat4,
-                    R.string.ket4,
-                    R.string.cb4
-            );
+    private void analisaJawaban(){
+        for (int i=0;i<jawaban.size();i++){
+            if (i<6){
+                k1 = k1 + jawaban.get(i);
+            }else if (i>=6 && i<13){
+                k2 = k2 + jawaban.get(i);
+            }else if (i>=13 && i<18) {
+                k3 = k3 + jawaban.get(i);
+            }else  if(i>=18 && i<22){
+                k4 = k4 + jawaban.get(i);
+            }
         }
     }
+
+    private void analisaKarakter(){
+        analisaJawaban();
+        if (k1>=k2 && k1>=k3 && k1>=k4){
+            resultKarakters = daftarKarakters.get(0);
+        }else if (k2>=k1 && k2>=k3 && k2>=k4){
+            resultKarakters = daftarKarakters.get(1);
+        }else if (k3>=k1 && k3>=k1 && k3>=k4){
+            resultKarakters = daftarKarakters.get(2);
+        }else if(k4>=k1 && k4>=k2 && k4>=k3){
+            resultKarakters = daftarKarakters.get(3);
+        }
+    }
+
+    public void getJsonSoal(String jsonFile){
+        try {
+            JSONObject jsonObject = new JSONObject(jsonFile);
+            JSONArray jsonSoal = jsonObject.getJSONArray("soal");
+            for (int j=0;j<jsonSoal.length();j++){
+                JSONObject jsonIsi = jsonSoal.getJSONObject(j);
+                int noSoal = jsonIsi.getInt("noSoal");
+                String catSoal = jsonIsi.getString("kategoriSoal");
+                String soal = jsonIsi.getString("soal");
+                pertanyaan.add(new Pertanyaan(noSoal, catSoal, soal));
+            }
+            JSONArray jsonKarakter = jsonObject.getJSONArray("karakter");
+            for (int j=0;j<jsonKarakter.length();j++){
+                JSONObject jsonIsi = jsonKarakter.getJSONObject(j);
+                int noKarakter = jsonIsi.getInt("noKarakter");
+                String warna = jsonIsi.getString("warnaKarakter");
+                String namaKar = jsonIsi.getString("namaKarakter");
+                String caraBelajar = jsonIsi.getString("caraBelajar");
+                String ketKar = jsonIsi.getString("sifatKarakter");
+                daftarKarakters.add(new Karakter(noKarakter, warna, namaKar, caraBelajar, ketKar));
+            }
+        }catch (JSONException ex){
+            ex.printStackTrace();
+        }
+    }
+
+    public String loadJSONFromRaw(InputStream inputStream) {
+        String json = null;
+        try {
+            InputStream is = inputStream;
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
+    }
+
 }

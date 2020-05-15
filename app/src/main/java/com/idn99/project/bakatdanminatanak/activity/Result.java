@@ -4,20 +4,25 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.idn99.project.bakatdanminatanak.R;
+import com.idn99.project.bakatdanminatanak.model.Anak;
 import com.idn99.project.bakatdanminatanak.model.Karakter;
+
+import java.util.ArrayList;
 
 public class Result extends AppCompatActivity {
 
-    private RelativeLayout layout;
+    private LinearLayout layout;
     private ImageView imgKar;
     private TextView tvNamaUmur, tvKep, tvSifat, tvBakat, tvKet, tvCaraBel;
     private Button btnBackHome;
@@ -29,16 +34,13 @@ public class Result extends AppCompatActivity {
 
         inisial();
 
-        Karakter karakter = getIntent().getParcelableExtra("result");
+        Anak anak = getIntent().getParcelableExtra("result");
 
-        layout.setBackgroundColor(karakter.getWarnaKarater());
-        imgKar.setImageResource(karakter.getGambararakter());
-        tvNamaUmur.setText(karakter.getNama()+" - "+karakter.getUmur()+" Tahun");
-        tvKep.setText(karakter.getKepribadian());
-        tvSifat.setText(karakter.getSifat());
-        tvBakat.setText(karakter.getMinat());
-        tvKet.setText(karakter.getKeterangan());
-        tvCaraBel.setText(karakter.getCaraBelajar());
+        layout.setBackgroundColor(Color.parseColor(anak.getWarnaKarakter()));
+        tvNamaUmur.setText(anak.getNama()+" - "+anak.getUmur()+" Tahun");
+        tvKep.setText(anak.getKarakter());
+        tvKet.setText(anak.getKetKarakter());
+        tvCaraBel.setText(anak.getCaraBelajar());
         btnBackHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

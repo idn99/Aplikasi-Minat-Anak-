@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.HalamanAwal"
     android:orientation="vertical"
-    android:background="@drawable/home"
+    android:background="@drawable/bg_home"
     >
 
     <LinearLayout
@@ -31,18 +31,18 @@
             android:textStyle="bold"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/gavabon"
-            android:textColor="@color/black"
+            android:textColor="@color/biru_gelap"
             android:layout_marginBottom="30dp"
             />
 
         <Button
             android:id="@+id/btn_mulai"
-            android:layout_width="200dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:text="mulai"
             android:layout_gravity="center"
-            android:background="@drawable/pilihan"
-            android:textColor="@color/colorAccent"
+            android:background="@drawable/blue_dark_circle"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="20sp"
             android:padding="20dp"
@@ -50,15 +50,16 @@
 
         <Button
             android:id="@+id/btn_about"
-            android:layout_width="200dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:text="tentang"
             android:layout_gravity="center"
-            android:background="@drawable/pilihan"
-            android:textColor="@color/colorAccent"
+            android:background="@drawable/blue_dark_circle"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:padding="20dp"/>
+            android:padding="20dp"
+            android:layout_marginTop="20dp"/>
 
     </LinearLayout>
 

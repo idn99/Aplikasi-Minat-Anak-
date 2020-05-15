@@ -7,19 +7,19 @@
     tools:context=".activity.Result">
     
     <RelativeLayout
-        android:id="@+id/layout_result"
+        android:background="@color/biru_gelap"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:layout_height="match_parent"
         >
 
         <LinearLayout
+            android:id="@+id/layout_result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/result"
             android:padding="30dp"
             android:layout_marginTop="140dp"
+            android:background="@color/white"
             >
             <TextView
                 android:layout_marginTop="120dp"
@@ -150,13 +150,12 @@
                 android:id="@+id/btn_back_home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kembali ke Home"
-                android:padding="10dp"
-                android:layout_marginBottom="20dp"
-                android:textColor="@color/white"
-                android:background="@drawable/button"
                 android:layout_gravity="center"
-                />
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/white_circle"
+                android:padding="10dp"
+                android:text="Kembali ke Home"
+                android:textColor="@color/black" />
         </LinearLayout>
 
     <androidx.cardview.widget.CardView

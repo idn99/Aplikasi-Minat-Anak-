@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#ffffff</color>
+    <color name="colorAccent">#000000</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="merah">#f58e8e</color>
@@ -15,4 +15,7 @@
     <color name="silver_2">#d3c7b1</color>
     <color name="gold">#c28f48</color>
     <color name="brown">#9a4832</color>
+
+    <color name="biru_laut">#71e9f2</color>
+    <color name="biru_gelap">#274279</color>
 </resources>
