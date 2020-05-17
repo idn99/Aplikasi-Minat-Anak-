@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
 import com.idn99.project.bakatdanminatanak.adapter.AboutListAdapter;
@@ -26,7 +27,7 @@ public class About extends AppCompatActivity {
         addAnggota();
 
         AboutListAdapter adapter = new AboutListAdapter(anggotas);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(About.this));
         recyclerView.setAdapter(adapter);
     }
 
@@ -35,7 +36,7 @@ public class About extends AppCompatActivity {
         anggotas.add(maul);
         Anggota fahri = new Anggota(R.drawable.sang, "FAHRI ANDI MUHAMMAD HAMZAH", "171011402576");
         anggotas.add(fahri);
-        Anggota ilham = new Anggota(R.drawable.pleg, "ILHAM DWI NUGRAHA", "171011402136");
+        Anggota ilham = new Anggota(R.drawable.chol, "ILHAM DWI NUGRAHA", "171011402136");
         anggotas.add(ilham);
     }
 }
