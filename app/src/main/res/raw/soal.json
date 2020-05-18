@@ -109,6 +109,381 @@
       "noSoal": 22,
       "kategoriSoal": "Tes Karakter",
       "soal": "Apakah Anak Anda Kurang Disiplin ?"
+    },
+    {
+      "noSoal": 1,
+      "kategoriSoal": "Tes Bakat",
+      "soal": "Dapat menirukan kalimat sederhana"
+    },
+    {
+      "noSoal": 2,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat meniru kembali 4-5 urutan kata"
+    },
+    {
+      "noSoal": 3,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mengulangi kalimat yang sudah didengarnya"
+    },
+    {
+      "noSoal": 4,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menyanyikan lagu anak-anak lebih dari 20 lebih lagu"
+    },
+    {
+      "noSoal": 5,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat menyebutkan simbol-simbol huruf vokal dan konsonan"
+    },
+    {
+      "noSoal": 6,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mengucapkan syair lagu sambil diiringi senandung lagunya"
+    },
+    {
+      "noSoal": 7,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat mengelompokkan benda dengan berbagai cara menurut fungsinya"
+    },
+    {
+      "noSoal": 8,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Meniru berbagai lambang huruf vokal dan konsonan"
+    },
+    {
+      "noSoal": 9,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mengelompokkan benda dengan berbagai cara menurut fungsinya : misalnya peralatan makan, peralatan mandi, peralatan kebersihan"
+    },
+    {
+      "noSoal": 10,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat Menggunakan dan dapat menjawab pertanyaan apa, mengapa, dimana, berapa, bagaimana, dsb"
+    },
+    {
+      "noSoal": 11,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Bercerita tentang gambar yang disediakan atau dibuat sendiri"
+    },
+    {
+      "noSoal": 12,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Bercerita menggunakan kata ganti aku, saya, kamu, mereka, dll"
+    },
+    {
+      "noSoal": 13,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menceritakan pengalaman/kejadian secara sederhana"
+    },
+    {
+      "noSoal": 14,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Memberikan keterangan/informasi tentang suatu hal"
+    },
+    {
+      "noSoal": 15,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat menyebutkan urutan bilangan 1-10"
+    },
+    {
+      "noSoal": 16,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat menunjuk lambang bilangan 1-10 C017 Meniru lambang bilangan 1-10 "
+    },
+    {
+      "noSoal": 17,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Meniru lambang bilangan 1-10"
+    },
+    {
+      "noSoal": 18,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mengenal lambang bilangan 1-20"
+    },
+    {
+      "noSoal": 19,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Membedakan dan membuat dua kumpulan benda berdasarkan kuantitasnya"
+    },
+    {
+      "noSoal": 20,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mengenal perbedaan benda berdasarkan bentuknya"
+    },
+    {
+      "noSoal": 21,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mencoba dan menceritakan tentang proses pencampuran warna"
+    },
+    {
+      "noSoal": 22,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mencoba dan menceritakan tentang proses benda-benda dimasukkan kedalam air (terapung, tenggelam)"
+    },
+    {
+      "noSoal": 23,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menceritakan macam-macam bunyi"
+    },
+    {
+      "noSoal": 24,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menceritakan macam-macam rasa"
+    },
+    {
+      "noSoal": 25,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menceritakan macam-macam bau"
+    },
+    {
+      "noSoal": 26,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mau mengungkapkan pendapat secara sederhana"
+    },
+    {
+      "noSoal": 27,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menjawab pertanyaan tentang informasi/keterangan"
+    },
+    {
+      "noSoal": 28,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menyapa teman dan orang lain"
+    },
+    {
+      "noSoal": 29,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mengucapkan salam"
+    },
+    {
+      "noSoal": 30,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Selalu mengucapkan terima kasih jika memperoleh sesuatu"
+    },
+    {
+      "noSoal": 31,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mengekspresikan perasaannya, misalnya : marah, sedih, gembira, dll"
+    },
+    {
+      "noSoal": 32,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Membuat perencanaan kegiatan yang dilakukan anak"
+    },
+    {
+      "noSoal": 33,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mampu mengambil keputusan secara sederhana"
+    },
+    {
+      "noSoal": 34,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menggambar bebas dengan berbagai media"
+    },
+    {
+      "noSoal": 35,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mau menunjukkan perbuatan yang benar dan yang salah"
+    },
+    {
+      "noSoal": 36,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Suka menolong"
+    },
+    {
+      "noSoal": 37,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mau bermain dengan teman sebaya tanpa membedakan : warna kulit,\nketurunan, rambut, agama, dll"
+    },
+    {
+      "noSoal": 38,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menghargai hasil karya teman/orang lain"
+    },
+    {
+      "noSoal": 39,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menghargai keunggulan teman/orang lain"
+    },
+    {
+      "noSoal": 40,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mengajak teman untuk bermain"
+    },
+    {
+      "noSoal": 41,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mau menolong dan memberi maaf"
+    },
+    {
+      "noSoal": 42,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat hidup berdampingan dengan teman agama lain"
+    },
+    {
+      "noSoal": 43,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Memuji teman atau orang lain"
+    },
+    {
+      "noSoal": 44,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Berpakaian rapi dan sopan"
+    },
+    {
+      "noSoal": 45,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menghormati guru, orang tua dan orang yang lebih tua"
+    },
+    {
+      "noSoal": 46,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mendengarkan dan memperhatikan teman yang berbicara"
+    },
+    {
+      "noSoal": 47,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Memelihara hasil karya sendiri"
+    },
+    {
+      "noSoal": 48,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mentaati aturan permainan"
+    },
+    {
+      "noSoal": 49,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Berani bertanya dan menjawab pertanyaan"
+    },
+    {
+      "noSoal": 50,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Bertanggung jawab akan tugasnya"
+    },
+    {
+      "noSoal": 51,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Melaksanakan tugas sendiri sampai selesai"
+    },
+    {
+      "noSoal": 52,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Melakukan 3-5 perintah secara berurutan dengan benar"
+    },
+    {
+      "noSoal": 53,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat melaksanakan tugas kelompok"
+    },
+    {
+      "noSoal": 54,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat bekerja sama dengan teman"
+    },
+    {
+      "noSoal": 55,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mau bermain dengan teman"
+    },
+    {
+      "noSoal": 56,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Saling membantu sesama teman"
+    },
+    {
+      "noSoal": 57,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mau membantu memecahkan perselisihan/permasalahan"
+    },
+    {
+      "noSoal": 58,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mau berbagi dengan teman"
+    },
+    {
+      "noSoal": 59,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mau meminjamkan miliknya"
+    },
+    {
+      "noSoal": 60,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Sabar menunggu giliran"
+    },
+    {
+      "noSoal": 61,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mengendalikan emosi dengan cara wajar"
+    },
+    {
+      "noSoal": 62,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat menerima kritik"
+    },
+    {
+      "noSoal": 63,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Melukiskan apa yang dilihat, didengar dalam sebuah kertas"
+    },
+    {
+      "noSoal": 64,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Menggambar bebas dari bentuk dasar titik, garis, lingkaran, segitiga,\nsegiempat"
+    },
+    {
+      "noSoal": 65,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat memainkan alat musik, seperti angklung, piano"
+    },
+    {
+      "noSoal": 66,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Dapat memahami tangga nada"
+    },
+    {
+      "noSoal": 67,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mengekspresikan gerakan sesuai dengan syair lagi/cerita, iringan\nmusik/lagu"
+    },
+    {
+      "noSoal": 68,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mengekspresikan diri dalam gerakan"
+    },
+    {
+      "noSoal": 69,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mampu bermain peran"
+    },
+    {
+      "noSoal": 70,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mampu menggunakan sepeda dengan seimbang"
+    },
+    {
+      "noSoal": 71,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mampu menangkap bola yang memantul"
+    },
+    {
+      "noSoal": 72,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Mampu berdiri dengan satu kaki secara seimbang"
+    },
+    {
+      "noSoal": 73,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Sangat senang bergerak (sulit diam)"
+    },
+    {
+      "noSoal": 74,
+      "kategoriSoal": "Tes Bakat",
+      "soal":"Sangat senang berolahraga"
+    },
+    {
+      "noSoal": 75,
+      "kategoriSoal": "Tes Bakat",
+      "soal":" Sangat senang berlari pagi"
     }
   ],
   "karakter": [
@@ -141,7 +516,7 @@
       "sifatKarakter": "Sanguinis merupakan tipe karakter kepribadian yang suka menjadi bahan perhatian, ingin selalu disenangi oleh orang lain, menyukai kepopuleran, memiliki rasa percaya diri yang tinggi dan senang menjadi pusat perhatian. Seorang sanguinis selalu senang dalam situasi yang gembira, pesta- pesta, berkumpul dengan teman- teman dalam kondisi yang ramai. Senang terhadap aktivitas kebersamaan yang menyenangkan, namun hidupnya tidak teratur. Orang dengan tipe sanguinis susah berkonsentrasi dan diajak serius. Selalu cenderung memberikan keputusan setelah berpikir pendek"
     }
   ],
-  "kriteria": [
+  "bakat": [
     {
       "noKriteria": 1,
       "bakatAnak": "Intelektual Umum",

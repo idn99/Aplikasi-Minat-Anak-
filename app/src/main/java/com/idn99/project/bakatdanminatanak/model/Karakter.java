@@ -11,7 +11,6 @@ public class Karakter implements Parcelable{
 
     @SerializedName("namaKarakter")
     private String namKarakter;
-
     private String caraBelajar;
     private String sifatKarakter;
 

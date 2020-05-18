@@ -38,7 +38,9 @@ public class Result extends AppCompatActivity {
 
         layout.setBackgroundColor(Color.parseColor(anak.getWarnaKarakter()));
         tvNamaUmur.setText(anak.getNama()+" - "+anak.getUmur()+" Tahun");
+        tvSifat.setText(anak.getBakat());
         tvKep.setText(anak.getKarakter());
+        tvBakat.setText(anak.getKetBakat());
         tvKet.setText(anak.getKetKarakter());
         tvCaraBel.setText(anak.getCaraBelajar());
         btnBackHome.setOnClickListener(new View.OnClickListener() {

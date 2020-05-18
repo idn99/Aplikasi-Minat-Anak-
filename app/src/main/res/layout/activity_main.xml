@@ -68,7 +68,7 @@
         <TextView
             android:id="@+id/tv_soal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="120dp"
             android:text="Soal"
             android:textSize="22sp"
             android:fontFamily="@font/text"

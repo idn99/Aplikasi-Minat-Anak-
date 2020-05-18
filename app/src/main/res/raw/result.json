@@ -1,3 +1,14 @@
 {
-
+  "result": [
+    {
+      "nama": "ilham",
+      "umur": 12,
+      "warnaKarakter": "#ffffff",
+      "karakter": "melankonis",
+      "bakat": "coding",
+      "ketKarakter": "ket karakter",
+      "ketBakat": "ket bakat",
+      "caraBelajar": "cara belajar"
+    }
+  ]
 }
