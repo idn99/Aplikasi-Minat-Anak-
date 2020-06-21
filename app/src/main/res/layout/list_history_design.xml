@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+    android:id="@+id/history_layout">
+
+    <ImageView
+        android:id="@+id/img_history_user"
+        android:layout_width="110dp"
+        android:layout_height="124dp"
+        android:src="@drawable/p1"
+        />
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_history_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/tv_history_jk_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jenis kelamin | umur"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/tv_history_bkt_kar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Melankonis | Berfikir Kreatif dan Produktif"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/setting3"
+        android:id="@+id/img_history_kar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"/>
+
+
+</LinearLayout>

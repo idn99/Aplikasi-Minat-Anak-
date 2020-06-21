@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PengenalanBakatKarakter"
+    android:orientation="vertical"
+    android:background="@color/biru_gelap">
+
+    <Button
+        android:id="@+id/btn_pengenalan_bakat"
+        android:background="@drawable/cloud2"
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:text="Pengenalan bakat"
+        android:fontFamily="@font/text"
+        android:textSize="30dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="@color/biru_gelap"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_pengenalan_karakter"
+        android:background="@drawable/cloud2"
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:textStyle="bold"
+        android:text="Pengenalan Karakter"
+        android:fontFamily="@font/text"
+        android:textSize="30dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textColor="@color/biru_gelap"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

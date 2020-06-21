@@ -2,25 +2,29 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="20dp"
+    android:orientation="horizontal"
+    android:padding="10dp"
     >
 
     <LinearLayout
-        android:id="@+id/layout_history"
+        android:id="@+id/layout_pengenalan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
         android:orientation="vertical"
-        android:background="@drawable/blue_dark_circle">
+        android:background="@drawable/blue_dark_circle"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        >
         <TextView
-            android:id="@+id/tv_nama_history"
+            android:id="@+id/tv_nama_pengenalan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Nama"
+            android:text="Berfikir Kreatif dan Produktif"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:gravity="center_horizontal" />
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
     </LinearLayout>
+
 </LinearLayout>

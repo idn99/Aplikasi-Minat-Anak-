@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_pengenalan"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/silver_circle"
+        android:layout_marginLeft="10dp"
+        android:padding="20dp"
+        >
+        <TextView
+            android:id="@+id/tv_nama_pengenalan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Berfikir Kreatif dan Produktif"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_list"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>

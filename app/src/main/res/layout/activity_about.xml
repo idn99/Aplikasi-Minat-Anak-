@@ -14,6 +14,7 @@
         android:background="@color/biru_gelap"
         android:orientation="vertical">
         <androidx.recyclerview.widget.RecyclerView
+            android:nestedScrollingEnabled="false"
             android:layout_marginTop="65dp"
             android:background="@color/white"
             android:paddingTop="60dp"

@@ -5,36 +5,80 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.Result">
-    
-    <RelativeLayout
-        android:background="@color/biru_gelap"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:background="@color/biru_gelap"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="100dp"
+                android:thicknessRatio="1.9"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/image_kep"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/pleg"
+                    android:scaleType="centerCrop"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Anak"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:fontFamily="@font/gavabon"/>
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usia"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/text"/>
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/layout_result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="30dp"
-            android:layout_marginTop="140dp"
-            android:background="@color/white"
-            >
-            <TextView
-                android:layout_marginTop="120dp"
-                android:id="@+id/tv_name_age"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nama Anak - Usia"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_gravity="center"
-                android:textAlignment="center"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/gavabon"/>
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp"
+            android:background="@color/biru_cuman">
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -43,8 +87,6 @@
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:textAlignment="center"
                 android:fontFamily="@font/text"
                 />
 
@@ -54,10 +96,16 @@
                 android:layout_height="wrap_content"
                 android:text="Keterangan"
                 android:textSize="16sp"
-                android:layout_gravity="center"
-                android:textAlignment="center"
-                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,8 +113,6 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                android:layout_gravity="center"
-                android:textAlignment="center"
                 android:fontFamily="@font/text"/>
 
             <TextView
@@ -75,11 +121,17 @@
                 android:layout_height="wrap_content"
                 android:text="Keterangan"
                 android:textSize="16sp"
-                android:layout_gravity="center"
-                android:textAlignment="center"
-                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/text"/>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,8 +139,6 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                android:layout_gravity="center"
-                android:textAlignment="center"
                 android:fontFamily="@font/text"/>
 
             <TextView
@@ -97,11 +147,16 @@
                 android:layout_height="wrap_content"
                 android:text="Keterangan Karakter"
                 android:textSize="16sp"
-                android:layout_gravity="center"
-                android:textAlignment="center"
-                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/text"/>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -109,8 +164,6 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                android:layout_gravity="center"
-                android:textAlignment="center"
                 android:fontFamily="@font/text"/>
 
             <TextView
@@ -119,11 +172,16 @@
                 android:layout_height="wrap_content"
                 android:text="Keterangan"
                 android:textSize="16sp"
-                android:layout_gravity="center"
-                android:textAlignment="center"
-                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/text"/>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -131,8 +189,6 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                android:layout_gravity="center"
-                android:textAlignment="center"
                 android:fontFamily="@font/text"/>
 
             <TextView
@@ -141,39 +197,8 @@
                 android:layout_height="wrap_content"
                 android:text="Keterangan"
                 android:textSize="16sp"
-                android:layout_gravity="center"
-                android:textAlignment="center"
-                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/text"/>
-
-            <Button
-                android:id="@+id/btn_back_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/white_circle"
-                android:padding="10dp"
-                android:text="Kembali ke Home"
-                android:textColor="@color/black" />
         </LinearLayout>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:thicknessRatio="1.9">
-        <ImageView
-            android:id="@+id/image_kep"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:background="@drawable/pleg"
-            android:scaleType="centerCrop"
-            />
-    </androidx.cardview.widget.CardView>
-
-    </RelativeLayout>
+    </LinearLayout>
 
 </ScrollView>

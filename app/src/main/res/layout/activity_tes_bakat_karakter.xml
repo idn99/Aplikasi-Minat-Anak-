@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity"
+    tools:context=".activity.TesBakatKarakter"
     android:orientation="vertical"
     android:padding="20dp"
     android:background="@drawable/bg_image"
@@ -32,7 +32,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp">
         <TextView
-            android:id="@+id/jenis_tes"
+            android:id="@+id/jeniss_tes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Jenis Tes"
@@ -44,7 +44,7 @@
             android:gravity="center_horizontal" />
 
         <TextView
-            android:id="@+id/tv_soal_ke"
+            android:id="@+id/tvs_soal_ke"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Soal Ke "
@@ -66,7 +66,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
         <TextView
-            android:id="@+id/tv_soal"
+            android:id="@+id/tvs_soal"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:text="Soal"
@@ -78,22 +78,21 @@
             android:layout_marginBottom="20dp"
             android:gravity="center_horizontal" />
         <RadioGroup
-            android:id="@+id/rd_group"
+            android:id="@+id/rds_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <RadioButton
-                android:id="@+id/rd_yes"
+                android:id="@+id/rds_yes"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="Ya"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/text"
-                android:layout_marginLeft="50dp"
-                android:checked="true"/>
+                android:layout_marginLeft="50dp"/>
             <RadioButton
-                android:id="@+id/rd_no"
+                android:id="@+id/rds_no"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="Tidak"
@@ -104,7 +103,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_next"
+        android:id="@+id/btns_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="next"

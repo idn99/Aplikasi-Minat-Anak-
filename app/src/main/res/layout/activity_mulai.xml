@@ -24,8 +24,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Masukan Nama Anak : "
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
             android:textColor="@color/black"
             android:fontFamily="@font/text"
             android:textSize="20sp"/>
@@ -43,8 +41,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Masukan Usia Anak : "
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
             android:textColor="@color/black"
             android:fontFamily="@font/text"
             android:textSize="20sp"/>
@@ -57,7 +53,32 @@
             android:textSize="20sp"
             android:inputType="number"
             android:layout_marginBottom="20dp"
-            />
+            />]
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin : "
+            android:textColor="@color/black"
+            android:fontFamily="@font/text"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+        <RadioGroup
+            android:id="@+id/rdg_jk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <RadioButton
+                android:id="@+id/rd_lk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laki-Laki"/>
+
+            <RadioButton
+                android:id="@+id/rd_pr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"/>
+        </RadioGroup>
         <Button
             android:id="@+id/btn_lanjut"
             android:layout_width="wrap_content"
