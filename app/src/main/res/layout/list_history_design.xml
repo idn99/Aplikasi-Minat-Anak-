@@ -7,6 +7,7 @@
     android:id="@+id/history_layout">
 
     <ImageView
+        android:scaleType="centerCrop"
         android:id="@+id/img_history_user"
         android:layout_width="110dp"
         android:layout_height="124dp"
@@ -14,8 +15,8 @@
         />
 
     <LinearLayout
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="10dp"
         android:background="@color/white">
@@ -40,7 +41,7 @@
         <TextView
             android:id="@+id/tv_history_bkt_kar"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Melankonis | Berfikir Kreatif dan Produktif"
             android:textSize="12sp"
             android:layout_marginTop="5dp"
@@ -50,7 +51,6 @@
     </LinearLayout>
 
     <ImageView
-        android:src="@drawable/setting3"
         android:id="@+id/img_history_kar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -47,7 +47,7 @@
             android:id="@+id/foto_anggota"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/mel"
+            android:src="@drawable/l1"
             android:scaleType="centerCrop"
             />
     </androidx.cardview.widget.CardView>

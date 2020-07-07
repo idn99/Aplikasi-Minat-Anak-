@@ -223,7 +223,7 @@ public class HalamanAwal extends AppCompatActivity {
 
         addData.add(new ModelCiriKarakter(19,4,"Anak Periang"));
         addData.add(new ModelCiriKarakter(20,4,"Anak Bersifat Positif"));
-        addData.add(new ModelCiriKarakter(21,4,"Anak Selalu Bersemangan"));
+        addData.add(new ModelCiriKarakter(21,4,"Anak Selalu Bersemangat"));
         addData.add(new ModelCiriKarakter(22,4,"Anak Kurang Disiplin"));
     }
 

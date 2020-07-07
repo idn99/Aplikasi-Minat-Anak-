@@ -23,7 +23,7 @@ public class Mulai extends AppCompatActivity {
     private EditText edtName, edtUsia;
     private Button btnNext;
     private RadioGroup rdgJk;
-    private Boolean isEmpty = true;
+    private Boolean isEmpty;
     private String nama , usia, jenisKelamin;
     private int idAnak;
     ArrayList<ModelAnak> modelAnaks = new ArrayList<>();
@@ -41,10 +41,16 @@ public class Mulai extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nama = nullEdt(edtName);
-                usia = nullEdt(edtUsia);
+                nama = edtName.getText().toString();
+                usia = edtUsia.getText().toString();
                 cekRd();
-                if (!isEmpty){
+                if (nama.isEmpty()){
+                    edtName.setError("Tidak Boleh Kosong");
+                }else if (usia.isEmpty()){
+                    edtUsia.setError("Tidak Boleh Kosong");
+                }else if (isEmpty){
+                    Toast.makeText(Mulai.this, "Pilih Jenis Kelamin", Toast.LENGTH_SHORT).show();
+                }else{
                     DBHelper dbHelper = new DBHelper(getApplicationContext());
 
                     ModelAnak modelAnak = new ModelAnak(1,nama, Integer.parseInt(usia),jenisKelamin);
@@ -84,32 +90,15 @@ public class Mulai extends AppCompatActivity {
         alert.show();
     }
 
-    private String nullEdt(EditText edt){
-        String hasil = null;
-        if (edt.getText().toString().isEmpty()){
-            edt.setError("Mohon Diisi");
-            isEmpty = true;
-        }else{
-            hasil = edt.getText().toString();
-            isEmpty = false;
-        }
-        return hasil;
-    }
-
     private void cekRd(){
         if (rdgJk.getCheckedRadioButtonId() == R.id.rd_lk){
             jenisKelamin = "Laki - Laki";
-            if (isEmpty){
-                isEmpty = true;
-            }
+            isEmpty = false;
         }else if(rdgJk.getCheckedRadioButtonId() == R.id.rd_pr){
             jenisKelamin = "Perempuan";
-            if (isEmpty){
-                isEmpty = true;
-            }
+            isEmpty = false;
         }else {
             isEmpty = true;
-            Toast.makeText(this, "Pilih Jenis Kelamin", Toast.LENGTH_SHORT).show();
         }
     }
 }

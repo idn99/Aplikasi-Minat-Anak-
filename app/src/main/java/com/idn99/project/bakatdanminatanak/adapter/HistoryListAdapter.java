@@ -60,7 +60,7 @@ public class HistoryListAdapter extends RecyclerView.Adapter<HistoryListAdapter.
         Drawable drawable = res.getDrawable(resID );
         holder.imgUser.setImageDrawable(drawable);
 
-        holder.imgUser.setOnClickListener(new View.OnClickListener() {
+        holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int idAnak = hasil.get(position).getId_anak();
@@ -68,48 +68,6 @@ public class HistoryListAdapter extends RecyclerView.Adapter<HistoryListAdapter.
                 intent.putExtra("id_anak", idAnak);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
-            }
-        });
-
-        holder.imageKar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Context wrapper = new ContextThemeWrapper(context, R.style.AppTheme);
-                final PopupMenu popup = new PopupMenu(wrapper, v, Gravity.END);
-                popup.inflate(R.menu.pop_up_del);
-                popup.show();
-                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    @Override
-                    public boolean onMenuItemClick(MenuItem item) {
-                        switch (item.getItemId()) {
-                            case R.id.delete_item :
-                                DBHelper dbHelper = new DBHelper(context);
-                                ModelHasil modelHasil = new ModelHasil(
-                                        hasil.get(position).getId_hasil(),
-                                        hasil.get(position).getId_anak(),
-                                        hasil.get(position).getId_bakat(),
-                                        hasil.get(position).getId_karakter(),
-                                        hasil.get(position).getGambar_bakat(),
-                                        hasil.get(position).getNama_anak(),
-                                        hasil.get(position).getUmur_anak(),
-                                        hasil.get(position).getGender_anak(),
-                                        hasil.get(position).getNama_bakat(),
-                                        hasil.get(position).getKet_bakat(),
-                                        hasil.get(position).getNama_kar(),
-                                        hasil.get(position).getWarnaKarakter(),
-                                        hasil.get(position).getKet_karakter(),
-                                        hasil.get(position).getCara_belajar()
-                                );
-                                dbHelper.deleteModel(modelHasil);
-                                Toast.makeText(context, "Data Berhasil Dihapus", Toast.LENGTH_SHORT).show();
-                                Intent intent2 = new Intent(context, History.class);
-                                intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                ((Activity)context).finish();
-                                context.startActivity(intent2);
-                        }
-                        return false;
-                    }
-                });
             }
         });
     }

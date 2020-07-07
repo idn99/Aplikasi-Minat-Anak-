@@ -10,7 +10,7 @@
 
     <Button
         android:id="@+id/btn_pengenalan_bakat"
-        android:background="@drawable/cloud2"
+        android:background="@drawable/cloud"
         android:layout_width="280dp"
         android:layout_height="180dp"
         android:text="Pengenalan bakat"
@@ -27,7 +27,7 @@
 
     <Button
         android:id="@+id/btn_pengenalan_karakter"
-        android:background="@drawable/cloud2"
+        android:background="@drawable/cloud"
         android:layout_width="280dp"
         android:layout_height="180dp"
         android:textStyle="bold"

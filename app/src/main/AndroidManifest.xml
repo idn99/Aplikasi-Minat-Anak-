@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ss"
+        android:icon="@drawable/l2"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -12,7 +12,7 @@
         <activity android:name=".activity.TesBakatKarakter"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
-            android:theme="@style/SoalTheme"></activity>
+            android:theme="@style/SoalTheme"/>
         <activity android:name=".activity.History"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
